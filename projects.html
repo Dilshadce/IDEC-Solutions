@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-style-switcher-options="{'borderRadius': '0', 'changeLogo': false, 'colorPrimary': '#E04622', 'colorSecondary': '#EEAB26', 'colorTertiary': '#EAEFF3', 'colorQuaternary': '#080808'}">
-	
+
 
 <head>
 
@@ -23,6 +23,7 @@
 
 	<!-- Web Fonts  -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">     
@@ -48,6 +49,7 @@
 
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demos/demo-construction.css">
+	<link rel="stylesheet" href="css/demos/lightbox.css">
 
 	<!-- Skin CSS -->
 	<link rel="stylesheet" href="css/skins/skin-construction.css">      <script src="master/style-switcher/style.switcher.localstorage.js"></script> 
@@ -137,124 +139,148 @@
 			</div>
 		</header>
 
-			<div role="main" class="main">
-				<section class="section section-tertiary section-no-border pb-3 mt-0">
-					<div class="container">
-						<div class="row justify-content-end mt-4">
-							<div class="col-lg-10 pt-4 mt-4 text-right">
-								<h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">Projects</h1>
-							</div>
+		<div role="main" class="main">
+			<section class="section section-tertiary section-no-border pb-3 mt-0">
+				<div class="container">
+					<div class="row justify-content-end mt-4">
+						<div class="col-lg-10 pt-4 mt-4 text-right">
+							<h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">Projects</h1>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<div class="container">
+			<div class="container">
 
-					<div class="row pt-2">
-						<div class="col">
+				<div class="row pt-2">
+					<div class="col">
 
-							<ul class="nav nav-pills sort-source mb-3 pb-2" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-								<li class="nav-item active" data-option-value="*"><a class="nav-link active" href="#">Show All</a></li>
-								<li class="nav-item" data-option-value=".pre-construction"><a class="nav-link" href="#">Pre-Construction</a></li>
-								<li class="nav-item" data-option-value=".general-construction"><a class="nav-link" href="#">General Construction</a></li>
-								<li class="nav-item" data-option-value=".plumbing"><a class="nav-link" href="#">Plumbing</a></li>
-								<li class="nav-item" data-option-value=".painting"><a class="nav-link" href="#">Painting</a></li>
-							</ul>
+						<ul class="nav nav-pills sort-source mb-3 pb-2" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+							<li class="nav-item active" data-option-value="*"><a class="nav-link active" href="#">Show All</a></li>
+							<li class="nav-item" data-option-value=".residential"><a class="nav-link" href="#">Residential Interiors</a></li>
+							<li class="nav-item" data-option-value=".commercial"><a class="nav-link" href="#">Commercial Interiors</a></li>
+							<li class="nav-item" data-option-value=".office"><a class="nav-link" href="#">Office Interiors</a></li>
+							<li class="nav-item" data-option-value=".webdesign"><a class="nav-link" href="#">Web Designs</a></li>
+						</ul>
 
-							<div class="sort-destination-loader sort-destination-loader-showing">
-								
-								<div class="row mb-4 pt-1 portfolio-list sort-destination" data-sort-id="portfolio">
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 pre-construction">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-1.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+						<div class="sort-destination-loader sort-destination-loader-showing">
+
+							<div class="row mb-4 pt-1 portfolio-list sort-destination" data-sort-id="portfolio">
+
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 residential">
+									<a class="example-image-link" href="img/demos/construction/gallery/construction-gallery-1.jpg" data-lightbox="example-1" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/construction-gallery-1.jpg" class="img-fluid" alt=""/>
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Residential Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">Porto Building</h4>
-										<p class="mb-0">New York</p>
-									</div>
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 general-construction">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-2.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+										</span>
+									</a>
+									
+								</div>
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 residential">
+									<a class="example-image-link" href="img/demos/construction/gallery/construction-gallery-2.jpg" data-lightbox="example-2" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/construction-gallery-2.jpg" class="img-fluid" alt=""/>
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Residential Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">Okler Towers</h4>
-										<p class="mb-0">Los Angeles</p>
-									</div>
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 plumbing">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-3.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+										</span>
+									</a>
+									
+								</div>
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 residential">
+									<a class="example-image-link" href="img/demos/construction/gallery/construction-gallery-3.jpg" data-lightbox="example-3" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/construction-gallery-3.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Residential Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">Jet Hotels</h4>
-										<p class="mb-0">New Jersey</p>
-									</div>
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 painting">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-4.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+										</span>
+									</a>
+									
+								</div>
+
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 commercial">
+									<a class="example-image-link" href="img/demos/construction/gallery/construction-gallery-4.jpg" data-lightbox="example-4" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/construction-gallery-4.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Commercial Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">Okler Mansion</h4>
-										<p class="mb-0">Chicago</p>
-									</div>
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 pre-construction">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-5.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+										</span>
+									</a>
+									
+								</div>
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 commercial">
+									<a class="example-image-link" href="img/demos/construction/gallery/fbd.jpg" data-lightbox="example-5" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/fbd.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Commercial Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">Marina Building</h4>
-										<p class="mb-0">Detroit</p>
-									</div>
-									<div class="col-md-6 col-lg-4 isotope-item mb-4 painting">
-										<a href="projects-detail">
-											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-												<span class="thumb-info-wrapper">
-													<img src="img/demos/construction/gallery/construction-gallery-6.jpg" class="img-fluid" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">View Project...</span>
-													</span>
+										</span>
+									</a>
+									
+								</div>
+
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 office">
+									<a class="example-image-link" href="img/demos/construction/gallery/construction-gallery-5.jpg" data-lightbox="example-6" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/construction-gallery-5.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Office Interiors</span>
 												</span>
 											</span>
-										</a>
-										<h4 class="mt-3 mb-0">One Lofts</h4>
-										<p class="mb-0">Miami</p>
-									</div>
+										</span>
+									</a>
+									
+								</div>
+
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 webdesign">
+									<a class="example-image-link" href="img/demos/construction/gallery/qdecf.jpg" data-lightbox="example-7" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/qdecf.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Quality decor Website</span>
+												</span>
+											</span>
+										</span>
+									</a>
+									
+								</div>
+								<div class="col-md-6 col-lg-4 isotope-item mb-4 webdesign">
+									<a class="example-image-link" href="img/demos/construction/gallery/fvf.jpg" data-lightbox="example-8" data-title="">
+										<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+											<span class="thumb-info-wrapper">
+												<img src="img/demos/construction/gallery/fvf.jpg" class="img-fluid" alt="">
+												<span class="thumb-info-title">
+													<span class="thumb-info-inner">Village hotel Website</span>
+												</span>
+											</span>
+										</span>
+									</a>
+									
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
+		</div>
 
 
 		<footer id="footer">
@@ -317,11 +343,11 @@
 
 						</div>
 						
-							<ul class=" social-icons  d-sm-block social-icons-clean ml-0">
-								<li class="social-icons-facebook"><a href="https://www.facebook.com/idec.solutions" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-								<li class="social-icons-instagram"><a href="https://www.instagram.com/idec.solutions" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-								<li class="social-icons-linkedin"><a href="https://wa.me/+918304903122" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-							</ul>
+						<ul class=" social-icons  d-sm-block social-icons-clean ml-0">
+							<li class="social-icons-facebook"><a href="https://www.facebook.com/idec.solutions" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="social-icons-instagram"><a href="https://www.instagram.com/idec.solutions" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+							<li class="social-icons-linkedin"><a href="https://wa.me/+918304903122" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+						</ul>
 						
 
 
@@ -340,49 +366,50 @@
 			</div>
 		</footer>
 
-		</div>
+	</div>
 
-		<!-- Vendor -->
-		<script src="vendor/jquery/jquery.min.js"></script>	
-			<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
-					<script src="vendor/jquery.easing/jquery.easing.min.js"></script>		
-					<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>	
-						<script src="master/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src="master/less/skin-construction.less"></script>
-							<script src="vendor/popper/umd/popper.min.js"></script>	
-								<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-										<script src="vendor/common/common.min.js"></script>	
-										<script src="vendor/jquery.validation/jquery.validate.min.js"></script>	
-										<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>	
-										<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>	
-												<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-												<script src="vendor/isotope/jquery.isotope.min.js"></script>
-												<script src="vendor/owl.carousel/owl.carousel.min.js"></script>	
-												<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>	
-																<script src="vendor/vide/jquery.vide.min.js"></script>	
-																	<script src="vendor/vivus/vivus.min.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="js/theme.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
-		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- Vendor -->
+	<script src="vendor/jquery/jquery.min.js"></script>	
+	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script src="vendor/jquery.easing/jquery.easing.min.js"></script>		
+	<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>	
+	<script src="master/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src="master/less/skin-construction.less"></script>
+	<script src="vendor/popper/umd/popper.min.js"></script>	
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/common/common.min.js"></script>	
+	<script src="vendor/jquery.validation/jquery.validate.min.js"></script>	
+	<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>	
+	<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>	
+	<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+	<script src="vendor/isotope/jquery.isotope.min.js"></script>
+	<script src="vendor/owl.carousel/owl.carousel.min.js"></script>	
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>	
+	<script src="vendor/vide/jquery.vide.min.js"></script>	
+	<script src="vendor/vivus/vivus.min.js"></script>
 
-		<!-- Current Page Vendor and Views -->
-		<script src="vendor/nivo-slider/jquery.nivo.slider.min.js"></script>
-		<script src="js/views/view.contact.js"></script>
+	<!-- Theme Base, Components and Settings -->
+	<script src="js/theme.js"></script>
+	<script src="js/lightbox.js"></script>
 
-		<!-- Demo -->
-		<script src="js/demos/demo-construction.js"></script>	
+	<!-- Current Page Vendor and Views -->
+	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-		
-		<!-- Theme Initialization Files -->
-		<script src="js/theme.init.js"></script>
+	<!-- Current Page Vendor and Views -->
+	<script src="vendor/nivo-slider/jquery.nivo.slider.min.js"></script>
+	<script src="js/views/view.contact.js"></script>
+
+	<!-- Demo -->
+	<script src="js/demos/demo-construction.js"></script>	
 
 
+	<!-- Theme Initialization Files -->
+	<script src="js/theme.init.js"></script>
 
 
 
-	</body>
+
+
+</body>
 
 <!-- Mirrored from portotheme.com/html/porto/8.0.0/projects by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Sep 2020 20:19:31 GMT -->
 </html>
